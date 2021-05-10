@@ -8,8 +8,11 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="lightcoral">#F08080</color>
-    <color name="DeepSkyBlue">#00BFFF</color>
-    <color name="DeepSkyBlue">#00BFFF</color>
+    <color name="deepSkyBlue">#00BFFF</color>
+    <color name="burlyWood">#DEB887</color>
+    <color name="goldenrod">#DAA520</color>
+    <color name="gold">#FFD700</color>
+
 
 
 </resources>

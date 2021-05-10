@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/plano5"
+    android:background="@drawable/plano7"
     tools:context=".Telainicial">
 
     <ImageView
@@ -13,10 +13,10 @@
         android:layout_height="72dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintHorizontal_bias="0.424"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
+        app:layout_constraintVertical_bias="0.062"
         app:srcCompat="@drawable/minhasemana" />
 
     <ImageButton
@@ -28,7 +28,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView3"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.092"
+        app:layout_constraintVertical_bias="0.116"
         app:srcCompat="@drawable/segunda" />
 
     <ImageButton
@@ -41,7 +41,7 @@
         app:layout_constraintStart_toStartOf="@+id/imageButton5"
         app:layout_constraintTop_toBottomOf="@+id/imageButton5"
         app:layout_constraintVertical_bias="0.03"
-        app:srcCompat="@drawable/terça" />
+        app:srcCompat="@drawable/terca" />
 
     <ImageButton
         android:id="@+id/imageButton7"
@@ -109,10 +109,10 @@
         android:layout_height="191dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintHorizontal_bias="0.922"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.121" />
+        app:layout_constraintVertical_bias="0.152" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -124,7 +124,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:layout_constraintVertical_bias="0.487"
-        app:srcCompat="@drawable/anotaçoes" />
+        app:srcCompat="@drawable/anotacoes" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"

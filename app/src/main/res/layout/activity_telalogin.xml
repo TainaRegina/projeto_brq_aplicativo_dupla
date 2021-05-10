@@ -4,79 +4,82 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/plano4"
+    android:background="@drawable/agendaamarela"
     tools:context=".Telalogin">
 
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="289dp"
-        android:layout_height="57dp"
+        android:layout_width="283dp"
+        android:layout_height="59dp"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008"
+        app:layout_constraintVertical_bias="0.111"
         app:srcCompat="@drawable/titulo" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="201dp"
-        android:layout_height="147dp"
+        android:layout_width="280dp"
+        android:layout_height="127dp"
         android:layout_marginStart="50dp"
-        android:layout_marginTop="25dp"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="408dp"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/fotocapa" />
+        app:layout_constraintVertical_bias="0.067"
+        app:srcCompat="@drawable/agenda" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
-        android:layout_width="335dp"
-        android:layout_height="55dp"
+        android:layout_width="270dp"
+        android:layout_height="41dp"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/email"
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.043" />
+        app:layout_constraintVertical_bias="0.137" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="335dp"
-        android:layout_height="55dp"
+        android:id="@+id/editTextPassword"
+        android:layout_width="268dp"
+        android:layout_height="42dp"
         android:ems="10"
         android:gravity="center"
         android:hint="@string/senha"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintVertical_bias="0.029" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="129dp"
         android:layout_height="48dp"
-        android:backgroundTint="@color/lightcoral"
+        android:backgroundTint="@color/gold"
         android:text="Login"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintVertical_bias="0.164" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        app:layout_constraintVertical_bias="0.162" />
 
     <TextView
         android:id="@+id/textView"
