@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Plannerbeta">
-        <activity android:name=".Teladenotas"></activity>
+        <activity android:name=".Terca"></activity>
+        <activity android:name=".Teladenotas" />
         <activity android:name=".Telainicial" />
         <activity android:name=".Telalogin">
             <intent-filter>
