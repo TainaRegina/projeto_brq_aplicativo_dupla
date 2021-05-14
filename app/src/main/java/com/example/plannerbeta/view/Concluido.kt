@@ -3,9 +3,9 @@ package com.example.plannerbeta
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Quinta : AppCompatActivity() {
+class Concluido : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_quinta)
+        setContentView(R.layout.activity_concluido)
     }
 }

@@ -3,9 +3,9 @@ package com.example.plannerbeta
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Telalogin : AppCompatActivity() {
+class Andamento : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_telalogin)
+        setContentView(R.layout.activity_andamento)
     }
 }
