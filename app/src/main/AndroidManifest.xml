@@ -9,18 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Plannerbeta">
-        <activity android:name=".Week.Atrasado"></activity>
-        <activity android:name=".Week.StatusEmAndamento" />
-        <activity android:name=".Week.StatusIniciar" />
-        <activity android:name=".Week.StatusConcluido" />
-        <activity android:name=".Teladenotas" />
-        <activity android:name=".Telainicial" >
+        <activity android:name=".view.Andamento"/>
+        <activity android:name=".view.TodasTarefas" />
+        <activity android:name=".view.Importante" />
+        <activity android:name=".view.Concluido" />
+        <activity android:name=".view.Iniciar" ></activity>
+        <activity android:name=".view.Telainicial" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+    </activity>
+
     </application>
 
 </manifest>
