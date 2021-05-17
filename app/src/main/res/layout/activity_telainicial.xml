@@ -8,108 +8,60 @@
     tools:context=".view.Telainicial">
 
     <ImageView
-        android:id="@+id/imageViewsemana"
-        android:layout_width="383dp"
+        android:id="@+id/imageView"
+        android:layout_width="293dp"
         android:layout_height="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/minhasemana" />
+        app:layout_constraintVertical_bias="0.058"
+        app:srcCompat="@drawable/titulonovo" />
 
     <CalendarView
         android:id="@+id/calendarView"
-        android:layout_width="404dp"
-        android:layout_height="308dp"
-        android:layout_marginBottom="340dp"
+        android:layout_width="403dp"
+        android:layout_height="295dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageViewsemana"
-        app:layout_constraintVertical_bias="0.142" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.263" />
 
     <Button
         android:id="@+id/buttoniniciar"
-        android:layout_width="295dp"
-        android:layout_height="40dp"
+        android:layout_width="290dp"
+        android:layout_height="47dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="@color/white"
-        android:text="A Iniciar"
+        android:text="Nova Tarefa"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarView"
-        app:layout_constraintVertical_bias="0.055" />
-
-    <Button
-        android:id="@+id/buttonandamento"
-        android:layout_width="295dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="@color/white"
-        android:text="Em Andamento"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttoniniciar"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/buttonconcluido"
-        android:layout_width="295dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        android:text="Concluído"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonandamento"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/buttonimportante"
-        android:layout_width="295dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        android:text="Importante"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonconcluido"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.068" />
 
     <Button
         android:id="@+id/buttontarefas"
-        android:layout_width="295dp"
-        android:layout_height="40dp"
+        android:layout_width="291dp"
+        android:layout_height="55dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
         android:backgroundTint="@color/white"
-        android:textColor="@color/black"
         android:text="Todas as Tarefas"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.475"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonimportante"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/buttoniniciar"
+        app:layout_constraintVertical_bias="0.046" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

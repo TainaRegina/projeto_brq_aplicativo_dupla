@@ -4,8 +4,6 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.CalendarView
-import androidx.core.content.ContextCompat.startActivity
 import com.example.plannerbeta.R
 
 lateinit var btniniciar: Button
@@ -26,32 +24,15 @@ class Telainicial : AppCompatActivity() {
 
     fun carregarElementos() {
         btniniciar = findViewById(R.id.buttoniniciar)
-        btnandamento = findViewById(R.id.buttonandamento)
-        btnconcluido = findViewById(R.id.buttonconcluido)
-        btnimportante = findViewById(R.id.buttonimportante)
         btntarefas = findViewById(R.id.buttontarefas)
 
     }
 
     fun carregarTelas() {
         btniniciar.setOnClickListener {
-            val iniciar = Intent(this, Iniciar::class.java)
+            val iniciar = Intent(this, Nova_tarefa::class.java)
             startActivity(iniciar)
 
-        }
-        btnandamento.setOnClickListener {
-            val andamento = Intent(this, Andamento::class.java)
-            startActivity(andamento)
-        }
-
-        btnconcluido.setOnClickListener {
-            val concluido = Intent(this, Concluido::class.java)
-            startActivity(concluido)
-        }
-
-        btnimportante.setOnClickListener {
-            val importante = Intent(this, Importante::class.java)
-            startActivity(importante)
         }
 
         btntarefas.setOnClickListener {

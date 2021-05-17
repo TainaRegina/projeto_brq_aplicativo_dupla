@@ -13,7 +13,7 @@
         <activity android:name=".view.TodasTarefas" />
         <activity android:name=".view.Importante" />
         <activity android:name=".view.Concluido" />
-        <activity android:name=".view.Iniciar" ></activity>
+        <activity android:name=".view.Nova_tarefa" ></activity>
         <activity android:name=".view.Telainicial" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
