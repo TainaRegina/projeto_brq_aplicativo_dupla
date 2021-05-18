@@ -2,15 +2,19 @@ package com.example.plannerbeta.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.EditText
 import android.widget.Spinner
 import android.widget.TextView
 import com.example.plannerbeta.R
 
-class ActivityDetalhes : AppCompatActivity() {
+class ActivityDetalhes: AppCompatActivity() {
 
 
     var tarefa: Tarefas? = null
+    var editTextTituloDetalhes : EditText? = null
+    var editTextDescricaoDetalhes : EditText? = null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,8 +22,12 @@ class ActivityDetalhes : AppCompatActivity() {
 
 
         tarefa = intent.getSerializableExtra("parametro_Objeto") as Tarefas
-        val textViewTitulo = findViewById<TextView>(R.id.textView_detalhes_titulo)
-        textViewTitulo.text = tarefa?.titulo
+
+        editTextTituloDetalhes = findViewById(R.id.editText_detalhes_titulo)
+        editTextDescricaoDetalhes = findViewById(R.id.editText_detalhes_descrição)
+
+        editTextDescricaoDetalhes?.setText(tarefa?.descricao)
+        editTextTituloDetalhes?.setText(tarefa?.titulo)
 
     }
 

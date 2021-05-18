@@ -26,7 +26,7 @@ class AdapterTodasAsTarefas(
 
     override fun onBindViewHolder(holder: ViewHolderTodasAsTerefas, position: Int) {
         arrayDeTarefas[position].apply {
-            holder.editTextDescrcao.setText(this.descricao)
+            holder.textViewDescrição.setText(this.descricao)
             holder.textViewStatus.text = status
             holder.textViewTitulo.text = titulo
         }
@@ -42,3 +42,7 @@ class AdapterTodasAsTarefas(
             notifyDataSetChanged()
         }
     }
+interface ItemClickListener {
+
+    fun onClickItem(view: View?, index: Int)
+}
