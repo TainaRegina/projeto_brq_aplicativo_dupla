@@ -1,4 +1,10 @@
 package com.example.plannerbeta.view
 
-class Tarefas {
+import javax.net.ssl.SSLEngineResult
+
+class Tarefas (
+    var titulo: String,
+    var descricao: String,
+    var status: String
+){
 }

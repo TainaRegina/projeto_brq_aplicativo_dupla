@@ -9,8 +9,6 @@ import androidx.core.content.ContextCompat.startActivity
 import com.example.plannerbeta.R
 
 lateinit var btniniciar: Button
-lateinit var btnandamento: Button
-lateinit var btnconcluido: Button
 lateinit var btnimportante: Button
 lateinit var btntarefas: Button
 
@@ -25,9 +23,6 @@ class Telainicial : AppCompatActivity() {
     }
 
     fun carregarElementos() {
-        btniniciar = findViewById(R.id.buttoniniciar)
-        btnandamento = findViewById(R.id.buttonandamento)
-        btnconcluido = findViewById(R.id.buttonconcluido)
         btnimportante = findViewById(R.id.buttonimportante)
         btntarefas = findViewById(R.id.buttontarefas)
 
@@ -38,15 +33,6 @@ class Telainicial : AppCompatActivity() {
             val iniciar = Intent(this, Iniciar::class.java)
             startActivity(iniciar)
 
-        }
-        btnandamento.setOnClickListener {
-            val andamento = Intent(this, Andamento::class.java)
-            startActivity(andamento)
-        }
-
-        btnconcluido.setOnClickListener {
-            val concluido = Intent(this, Concluido::class.java)
-            startActivity(concluido)
         }
 
         btnimportante.setOnClickListener {

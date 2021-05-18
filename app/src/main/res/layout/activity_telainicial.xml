@@ -31,85 +31,51 @@
         app:layout_constraintTop_toBottomOf="@+id/imageViewsemana"
         app:layout_constraintVertical_bias="0.142" />
 
+
     <Button
         android:id="@+id/buttoniniciar"
-        android:layout_width="295dp"
-        android:layout_height="40dp"
+        android:layout_width="319dp"
+        android:layout_height="74dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/white"
         android:text="A Iniciar"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calendarView"
-        app:layout_constraintVertical_bias="0.055" />
-
-    <Button
-        android:id="@+id/buttonandamento"
-        android:layout_width="295dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="@color/white"
-        android:text="Em Andamento"
-        android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttoniniciar"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/buttonconcluido"
-        android:layout_width="295dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="@color/white"
-        android:textColor="@color/black"
-        android:text="Concluído"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonandamento"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
 
     <Button
         android:id="@+id/buttonimportante"
-        android:layout_width="295dp"
-        android:layout_height="40dp"
+        android:layout_width="317dp"
+        android:layout_height="69dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/white"
-        android:textColor="@color/black"
         android:text="Importante"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttontarefas" />
 
     <Button
         android:id="@+id/buttontarefas"
-        android:layout_width="295dp"
-        android:layout_height="40dp"
+        android:layout_width="318dp"
+        android:layout_height="71dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/white"
-        android:textColor="@color/black"
         android:text="Todas as Tarefas"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonimportante"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/buttoniniciar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
