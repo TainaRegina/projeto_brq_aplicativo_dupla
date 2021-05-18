@@ -8,7 +8,8 @@ import com.example.plannerbeta.R
 
 class AdapterTodasAsTarefas(
         var context: Context,
-        var arrayDeTarefas : ArrayList<Tarefas>
+        var arrayDeTarefas : ArrayList<Tarefas>,
+        var onClick: (String)-> Unit
 ): RecyclerView.Adapter<ViewHolderTodasAsTerefas>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolderTodasAsTerefas {
@@ -27,5 +28,7 @@ class AdapterTodasAsTarefas(
             holder.textViewStatus.text = status
             holder.textViewTitulo.text = titulo
         }
+
+
     }
 }
