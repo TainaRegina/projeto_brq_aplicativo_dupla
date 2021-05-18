@@ -13,24 +13,25 @@
         android:layout_height="36dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintHorizontal_bias="0.627"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058"
+        app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/titulonovo" />
 
     <CalendarView
         android:id="@+id/calendarView"
-        android:layout_width="403dp"
-        android:layout_height="295dp"
+        android:layout_width="406dp"
+        android:layout_height="321dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.263" />
+        app:layout_constraintVertical_bias="0.17" />
 
     <Button
-        android:id="@+id/buttoniniciar"
+        android:id="@+id/button_novatarefa"
         android:layout_width="290dp"
         android:layout_height="47dp"
         android:layout_marginStart="20dp"
@@ -44,24 +45,34 @@
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarView"
-        app:layout_constraintVertical_bias="0.068" />
+        app:layout_constraintVertical_bias="0.066" />
 
-    <Button
-        android:id="@+id/buttontarefas"
-        android:layout_width="291dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"
-        android:backgroundTint="@color/white"
-        android:text="Todas as Tarefas"
-        android:textColor="@color/black"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="168dp"
+        android:layout_height="34dp"
+        android:gravity="center"
+        android:text="App by Beatriz e Tainá"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttoniniciar"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.977" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="262dp"
+        android:layout_height="168dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Importante"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_novatarefa"
+        app:layout_constraintVertical_bias="0.298" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

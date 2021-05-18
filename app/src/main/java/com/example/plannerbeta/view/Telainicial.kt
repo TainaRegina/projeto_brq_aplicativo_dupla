@@ -6,11 +6,8 @@ import android.os.Bundle
 import android.widget.Button
 import com.example.plannerbeta.R
 
-lateinit var btniniciar: Button
-lateinit var btnandamento: Button
-lateinit var btnconcluido: Button
-lateinit var btnimportante: Button
-lateinit var btntarefas: Button
+lateinit var btn_novatarefa: Button
+
 
 
 class Telainicial : AppCompatActivity() {
@@ -23,22 +20,17 @@ class Telainicial : AppCompatActivity() {
     }
 
     fun carregarElementos() {
-        btniniciar = findViewById(R.id.buttoniniciar)
-        btntarefas = findViewById(R.id.buttontarefas)
+         btn_novatarefa = findViewById(R.id.button_novatarefa)
 
     }
 
     fun carregarTelas() {
-        btniniciar.setOnClickListener {
-            val iniciar = Intent(this, Nova_tarefa::class.java)
-            startActivity(iniciar)
+        btn_novatarefa.setOnClickListener {
+            val novaTarefa = Intent(this, Nova_tarefa::class.java)
+            startActivity(novaTarefa)
 
         }
 
-        btntarefas.setOnClickListener {
-            val tarefas = Intent(this, TodasTarefas::class.java)
-            startActivity(tarefas)
-        }
 
     }
 }
