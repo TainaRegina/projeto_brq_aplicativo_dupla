@@ -25,20 +25,11 @@ class Telainicial : AppCompatActivity() {
     fun carregarElementos() {
         btnimportante = findViewById(R.id.buttonimportante)
         btntarefas = findViewById(R.id.buttontarefas)
+        btniniciar = findViewById(R.id.buttoniniciar)
 
     }
 
     fun carregarTelas() {
-        btniniciar.setOnClickListener {
-            val iniciar = Intent(this, Iniciar::class.java)
-            startActivity(iniciar)
-
-        }
-
-        btnimportante.setOnClickListener {
-            val importante = Intent(this, Importante::class.java)
-            startActivity(importante)
-        }
 
         btntarefas.setOnClickListener {
             val tarefas = Intent(this, TodasTarefas::class.java)
