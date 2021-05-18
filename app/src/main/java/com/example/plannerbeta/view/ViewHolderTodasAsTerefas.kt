@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.plannerbeta.R
 
-class ViewHolderTodasAsTerefas(itemView: View) : RecyclerView.ViewHolder(itemView) {
+class ViewHolderTodasTerefas(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
      var textViewTitulo : TextView
      var textViewStatus: TextView

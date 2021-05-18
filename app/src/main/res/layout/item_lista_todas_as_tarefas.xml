@@ -10,12 +10,11 @@
     <androidx.cardview.widget.CardView
         android:layout_width="369dp"
         android:layout_height="206dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:foreground="?attr/selectableItemBackground">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -51,7 +50,7 @@
                 android:ems="10"
                 android:gravity="bottom"
                 android:inputType="textPersonName"
-                android:text="Name"
+                android:text="Anotação"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />

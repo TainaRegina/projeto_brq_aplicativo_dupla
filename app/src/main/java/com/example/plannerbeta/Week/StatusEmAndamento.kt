@@ -7,6 +7,6 @@ import com.example.plannerbeta.R
 class StatusEmAndamento : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_quarta_feira)
+        setContentView(R.layout.activity_todastarefas)
     }
 }

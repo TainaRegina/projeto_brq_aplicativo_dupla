@@ -8,13 +8,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.plannerbeta.R
 
-class TodasAsTarefas : AppCompatActivity() {
+class TodasTarefas : AppCompatActivity() {
     var recyclerView: RecyclerView? = null
     lateinit var buttonSalvar: Button
     lateinit var buttonAdicionar: Button
     lateinit var buttonDeletar: Button
     lateinit var arrayNotas: ArrayList<Tarefas>
-    var adapter: AdapterTodasAsTarefas? = null
+    var adapter: AdapterTodasTarefas? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,7 +24,6 @@ class TodasAsTarefas : AppCompatActivity() {
         carregarArray()
         carregarEvento()
 
-        buttonAdicionar = findViewById(R.id.button_add)
 
         AdapterTodasAsTarefas(this, arrayNotas).let {
             adapter = it
@@ -34,12 +33,12 @@ class TodasAsTarefas : AppCompatActivity() {
         recyclerView?.layoutManager = LinearLayoutManager(this)
     }
 
-    private fun AdapterTodasAsTarefas(context: TodasAsTarefas, arrayDeTarefas: java.util.ArrayList<Tarefas>): AdapterTodasAsTarefas {
+    private fun AdapterTodasAsTarefas(context: TodasTarefas, arrayDeTarefas: java.util.ArrayList<Tarefas>): AdapterTodasTarefas {
         TODO("Not yet implemented")
     }
 
     fun carregarElemento() {
-        recyclerView = findViewById(R.id.recyclerView)
+        recyclerView = findViewById(R.id.recyclerViewtarefas)
         buttonSalvar = findViewById(R.id.button_salvar)
         buttonAdicionar = findViewById(R.id.button_add)
     }
@@ -65,11 +64,11 @@ class TodasAsTarefas : AppCompatActivity() {
     fun carregarEvento() {
 
         buttonAdicionar.setOnClickListener {
-            val todasAsTarefas = Intent(applicationContext, TodasAsTarefas::class.java)
+            val todasAsTarefas = Intent(applicationContext, TodasTarefas::class.java)
         }
 
         buttonSalvar.setOnClickListener {
-            val todasAsTarefas = Intent(this, TodasAsTarefas::class.java)
+            val todasAsTarefas = Intent(this, TodasTarefas::class.java)
             startActivity(todasAsTarefas)
         }
     }

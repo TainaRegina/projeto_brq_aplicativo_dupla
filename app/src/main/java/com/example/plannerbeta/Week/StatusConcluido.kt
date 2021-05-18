@@ -7,6 +7,6 @@ import com.example.plannerbeta.R
 class StatusConcluido : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_segunda_feira)
+        setContentView(R.layout.activity_todastarefas)
     }
 }
