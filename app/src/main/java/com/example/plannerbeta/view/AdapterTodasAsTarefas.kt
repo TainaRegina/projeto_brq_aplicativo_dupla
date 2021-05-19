@@ -27,8 +27,8 @@ class AdapterTodasAsTarefas(
     override fun onBindViewHolder(holder: ViewHolderTodasAsTerefas, position: Int) {
         arrayDeTarefas[position].apply {
             holder.textViewDescrição.setText(this.descricao)
-            holder.textViewStatus.text = status
-            holder.textViewTitulo.text = titulo
+            holder.textViewStatus.text = this.status
+            holder.textViewTitulo.text = this.titulo
         }
 
     }

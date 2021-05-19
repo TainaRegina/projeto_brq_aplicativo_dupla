@@ -8,15 +8,27 @@
     tools:visibility="visible">
 
 
+    <!--    <Spinner-->
+<!--        android:id="@+id/spinner"-->
+<!--        android:layout_width="376dp"-->
+<!--        android:layout_height="59dp"-->
+<!--        android:layout_marginTop="12dp"-->
+<!--        android:contextClickable="true"-->
+<!--        android:tooltipText="@string/bloconota"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.542"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/editText_detalhes_titulo" />-->
+
     <EditText
         android:id="@+id/editText_detalhes_titulo"
         android:layout_width="376dp"
         android:layout_height="56dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="148dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
@@ -30,18 +42,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_statusDetalhes" />
 
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="376dp"
-        android:layout_height="59dp"
+    <EditText
+        android:id="@+id/editText_statusDetalhes"
+        android:layout_width="378dp"
+        android:layout_height="55dp"
         android:layout_marginTop="12dp"
-        android:contextClickable="true"
-        android:tooltipText="@string/bloconota"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_detalhes_titulo" />
 

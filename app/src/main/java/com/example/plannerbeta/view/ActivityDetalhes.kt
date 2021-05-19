@@ -14,6 +14,7 @@ class ActivityDetalhes: AppCompatActivity() {
     var tarefa: Tarefas? = null
     var editTextTituloDetalhes : EditText? = null
     var editTextDescricaoDetalhes : EditText? = null
+    var editTextStatusDetalhes : EditText? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,10 +26,14 @@ class ActivityDetalhes: AppCompatActivity() {
 
         editTextTituloDetalhes = findViewById(R.id.editText_detalhes_titulo)
         editTextDescricaoDetalhes = findViewById(R.id.editText_detalhes_descrição)
+        editTextStatusDetalhes = findViewById(R.id.editText_statusDetalhes)
 
         editTextDescricaoDetalhes?.setText(tarefa?.descricao)
         editTextTituloDetalhes?.setText(tarefa?.titulo)
+        editTextStatusDetalhes?.setText(tarefa?.status)
 
+        SaveData.Tarefa = Tarefas(editTextDescricaoDetalhes?.text.toString(), editTextTituloDetalhes?.text.toString(), editTextStatusDetalhes?.text.toString())
     }
 
 }
+

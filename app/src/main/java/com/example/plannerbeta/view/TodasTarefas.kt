@@ -14,13 +14,14 @@ import androidx.core.widget.doOnTextChanged
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.plannerbeta.R
+import kotlin.text.contains as contains1
 
 class TodasTarefas : AppCompatActivity(), ItemClickListener {
     var recyclerView: RecyclerView?=null
-    lateinit var buttonSalvar: Button
     lateinit var arrayNotas: ArrayList<Tarefas>
     var adapter: AdapterTodasAsTarefas? = null
-    var editeTextFiltro : EditText? = null
+    var editTextFiltro : EditText? = null
+    lateinit var listaBase : ArrayList<Tarefas>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,6 +29,7 @@ class TodasTarefas : AppCompatActivity(), ItemClickListener {
 
         carregarElemento()
         carregarArray()
+        carregarEvento()
 
         AdapterTodasAsTarefas(this, arrayNotas, this) .let {
             adapter = it
@@ -37,37 +39,50 @@ class TodasTarefas : AppCompatActivity(), ItemClickListener {
         recyclerView?.layoutManager = LinearLayoutManager(this)
     }
 
-//    fun carregarEvento(){
-//
-//        editeTextFiltro?.addTextChangedListener(object : TextWatcher {
-//            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
-//                println(s)
-//            }
-//
-//            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-//                println(s)
-//            }
-//
-//            override fun afterTextChanged(s: Editable?) {
-//
-//                val stringFiltro = s.toString()
-//                arrayNotas.filter {
-//                    it.contains(Status, true)
-//                }
-//            }
-//        })
-//    }
+    fun carregarEvento(){
+
+        editTextFiltro?.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+                println(s)
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                println(s)
+            }
+
+            override fun afterTextChanged(s: Editable?) {
+
+                val stringFiltro = s.toString()
+                if (!stringFiltro.isNullOrEmpty()) {
+                    val listFilter = arrayNotas.filter {
+                        it.titulo.contains1(stringFiltro, true)
+                    }
+                    val listaFiltradaArrayList = arrayListOf<Tarefas>()
+
+                    for (item in listFilter) {
+                        listaFiltradaArrayList.add(item)
+                    }
+                    adapter?.update(listaFiltradaArrayList)
+                } else {
+                    adapter?.update(listaBase)
+                }
+                }
+        })
+    }
 
     fun carregarElemento(){
         recyclerView = findViewById(R.id.recyclerView)
-        buttonSalvar = findViewById(R.id.button_salvar)
-        editeTextFiltro = findViewById(R.id.editText_filtro)
+        editTextFiltro = findViewById(R.id.editText_filtro)
     }
 
     fun carregarArray() {
         arrayNotas = ArrayList()
         arrayNotas.add(Tarefas("Desenvolvimento de app", "Criação de activity e .xml", "Em andamento"))
         arrayNotas.add(Tarefas("Desenvolvimento de app", "Criação de recycler View e .xml", "Concluido"))
+        arrayNotas.add(Tarefas("Teste de Filtro", "Criação de recycler View e .xml", "Concluido"))
+
+        listaBase = arrayListOf()
+        listaBase.addAll(arrayNotas)
     }
 
     override fun onClickItem(view: View?, index: Int) {
