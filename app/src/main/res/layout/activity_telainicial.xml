@@ -8,6 +8,7 @@
     tools:context=".view.Telainicial">
 
     <ImageView
+<<<<<<< HEAD
         android:id="@+id/imageView"
         android:layout_width="293dp"
         android:layout_height="36dp"
@@ -18,6 +19,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/titulonovo" />
+=======
+        android:id="@+id/imageViewsemana"
+        android:layout_width="377dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041"
+        app:srcCompat="@drawable/minhasemana" />
+>>>>>>> 6c14da8ede3ddb9e39c3f7a47096342923c4c50f
 
     <CalendarView
         android:id="@+id/calendarView"
@@ -30,16 +43,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.17" />
 
+
     <Button
+<<<<<<< HEAD
         android:id="@+id/button_novatarefa"
         android:layout_width="290dp"
         android:layout_height="47dp"
+=======
+        android:id="@+id/buttoniniciar"
+        android:layout_width="319dp"
+        android:layout_height="74dp"
+>>>>>>> 6c14da8ede3ddb9e39c3f7a47096342923c4c50f
         android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"
         android:backgroundTint="@color/white"
         android:text="Nova Tarefa"
         android:textColor="@color/black"
+<<<<<<< HEAD
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -74,5 +95,42 @@
         app:layout_constraintTop_toBottomOf="@+id/button_novatarefa"
         app:layout_constraintVertical_bias="0.298" />
 
+=======
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarView" />
+
+    <Button
+        android:id="@+id/buttonimportante"
+        android:layout_width="317dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:text="Importante"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttontarefas" />
+
+    <Button
+        android:id="@+id/buttontarefas"
+        android:layout_width="318dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:text="Todas as Tarefas"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.433"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttoniniciar" />
+>>>>>>> 6c14da8ede3ddb9e39c3f7a47096342923c4c50f
 
 </androidx.constraintlayout.widget.ConstraintLayout>

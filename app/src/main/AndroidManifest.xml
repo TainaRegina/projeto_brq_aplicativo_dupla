@@ -9,12 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Plannerbeta">
+<<<<<<< HEAD
         <activity android:name=".itensdalista"></activity>
         <activity android:name=".view.Andamento" />
         <activity android:name=".view.TodasTarefas" />
         <activity android:name=".view.Importante" />
         <activity android:name=".view.Concluido" />
         <activity android:name=".view.Nova_tarefa" />
+=======
+        <activity android:name=".view.ActivityDetalhes"/>
+        <activity android:name=".view.TodasTarefas" />
+        <activity android:name=".view.Importante" />
+        <activity android:name=".view.Iniciar" />
+>>>>>>> 6c14da8ede3ddb9e39c3f7a47096342923c4c50f
         <activity android:name=".view.Telainicial">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
