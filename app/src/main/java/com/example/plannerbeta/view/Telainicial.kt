@@ -4,9 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.CalendarView
 import com.example.plannerbeta.R
 
 lateinit var btntarefas: Button
+
 
 
 class Telainicial : AppCompatActivity() {
@@ -18,22 +20,21 @@ class Telainicial : AppCompatActivity() {
         carregarTelas()
     }
 
-    fun carregarElementos() {
-
-        btntarefas = findViewById(R.id.buttontarefas)
+    private fun carregarElementos() {
+        btntarefas = findViewById(R.id.button_tarefas)
 
     }
 
     fun carregarTelas() {
 
         btntarefas.setOnClickListener {
-            val tarefas = Intent(this, TodasTarefas::class.java)
+            val tarefas = Intent(this, TodasAsTarefas::class.java)
             startActivity(tarefas)
+
         }
 
     }
 }
-
 
 
 
