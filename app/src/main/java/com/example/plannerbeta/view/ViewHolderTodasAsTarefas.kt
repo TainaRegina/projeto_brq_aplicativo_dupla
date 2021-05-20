@@ -1,10 +1,8 @@
 package com.example.plannerbeta.view
 
 import android.view.View
-import android.widget.EditText
 import android.widget.Spinner
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.plannerbeta.R
 
@@ -12,7 +10,8 @@ import com.example.plannerbeta.R
 class ViewHolderTodasTarefas(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
 
-    open class ViewHolderTodasAsTarefas(itemView: View, private val onClick: ItemClickListener?) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
+    open class ViewHolderTodasAsTarefas(itemView: View, private val onClick: TodasAsTarefas?
+    ) : RecyclerView.ViewHolder(itemView), View.OnClickListener {
 
 
         var textViewTitulo: TextView

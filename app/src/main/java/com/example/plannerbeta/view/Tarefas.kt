@@ -7,4 +7,7 @@ class Tarefas (
     var titulo: String,
     var descricao: String,
     var status: String
-) :Serializable
+) :Serializable {
+
+
+}
