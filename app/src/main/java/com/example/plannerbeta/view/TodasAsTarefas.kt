@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.plannerbeta.R
@@ -17,10 +18,18 @@ class TodasAsTarefas : AppCompatActivity() {
     lateinit var arrayNotas: ArrayList<Tarefas>
     var adapter: AdapterTodasAsTarefas? = null
     var editeTextFiltro: EditText? = null
+    var Detalhes: View? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_todastarefas)
+
+
+// função salvar, para enviar dados de uma tela para outra
+        Detalhes = intent.getParcelableExtra("detalhetarefa")
+        Toast(this, "Tarefa Salva")
+
+//
 
         carregarElemento()
         carregarArray()
@@ -36,10 +45,17 @@ class TodasAsTarefas : AppCompatActivity() {
         recyclerView?.layoutManager = LinearLayoutManager(this)
     }
 
+    private fun Toast(todasAsTarefas: TodasAsTarefas, s: String) {
+
+
+    }
+
 
     private fun AdapterTodasAsTarefas(context: TodasAsTarefas, arrayDeTarefas: java.util.ArrayList<Tarefas>): AdapterTodasAsTarefas {
         TODO("Not yet implemented")
     }
+
+
 
     fun carregarElemento() {
         recyclerView = findViewById(R.id.recyclerViewtarefas)
@@ -105,7 +121,11 @@ class TodasAsTarefas : AppCompatActivity() {
     }
 
 
+
+
 }
+
+
 
 fun onClickItem(view: View?, index: Int) {
     TODO("Not yet implemented")

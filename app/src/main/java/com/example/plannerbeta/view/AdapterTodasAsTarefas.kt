@@ -52,56 +52,33 @@ open class AdapterTodasAsTarefas(
 
 
     fun deleteTarefa(index: Int) {
-            arrayDeTarefas.removeAt(index)
-            notifyLista()
+        arrayDeTarefas.removeAt(index)
+        notifyLista()
+
+    }
+
+
+    class ViewHolderTodasAsTarefas(itemView: View, private val nossaInterface: ItemClickListener?)
+        : RecyclerView.ViewHolder(itemView), View.OnClickListener, View.OnLongClickListener {
+
+
+        override fun onClick(v: View?) {
+            nossaInterface?.onClickItem(v, adapterPosition)
 
         }
 
-       // fun addTarefa(arrayDeTarefas: ArrayList<Tarefas>) {
-            //    this.arrayDeTarefas.clear()
-              //  this.arrayDeTarefas.addAll(arrayDeTarefas)
-                //notifyLista()
-            }
 
-
-
-        class ViewHolderTodasAsTarefas(itemView: View, private val nossaInterface: ItemClickListener?)
-            : RecyclerView.ViewHolder(itemView), View.OnClickListener, View.OnLongClickListener {
-          //  var textViewDescricao = TextView
-           // var textViewStatus = TextView
-            //var textViewTitulo = TextView
-            //var spinner = Spinner
-
-
-            //init {
-             //   var textViewDescricao = itemView<>.findViewById(R.id.textView_descricao)
-               // var textViewStatus = itemView.findViewById(R.id.textView_status)
-                //var textViewTitulo = itemView.findViewById(R.id.textView_titulo)
-                //var spinner = itemView.findViewById(R.id.spinner)
-
-               // itemView.setOnClickListener(this)
-                //btndelete.setOnClickListener() {
-                  //  nossaInterface?.onClickButtonDelete(it, adapterPosition)
-
-
-
-
-            override fun onClick(v: View?) {
-                nossaInterface?.onClickItem(v, adapterPosition)
-
-            }
-
-
-            interface ItemClickListener : Parcelable {
-                fun onClickButtonDelete(view: View?,index: Int)
-                fun onClickItem(v: View?, adapterPosition: Int) {
-                    TODO("Not yet implemented")
-                }
-
-            }
-
-            override fun onLongClick(v: View?): Boolean {
+        interface ItemClickListener : Parcelable {
+            fun onClickButtonDelete(view: View?, index: Int)
+            fun onClickItem(v: View?, adapterPosition: Int) {
                 TODO("Not yet implemented")
             }
+
         }
+
+        override fun onLongClick(v: View?): Boolean {
+            TODO("Not yet implemented")
+        }
+    }
+}
 
