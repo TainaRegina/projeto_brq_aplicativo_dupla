@@ -6,22 +6,20 @@ import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.View
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
-import androidx.core.widget.addTextChangedListener
-import androidx.core.widget.doOnTextChanged
+import android.widget.*
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.plannerbeta.R
 import kotlin.text.contains as contains1
 
 class TodasTarefas : AppCompatActivity(), ItemClickListener {
+
     var recyclerView: RecyclerView?=null
     lateinit var arrayNotas: ArrayList<Tarefas>
     var adapter: AdapterTodasAsTarefas? = null
     var editTextFiltro : EditText? = null
     lateinit var listaBase : ArrayList<Tarefas>
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,6 +35,7 @@ class TodasTarefas : AppCompatActivity(), ItemClickListener {
         }
 
         recyclerView?.layoutManager = LinearLayoutManager(this)
+
     }
 
     fun carregarEvento(){
@@ -93,4 +92,4 @@ class TodasTarefas : AppCompatActivity(), ItemClickListener {
         startActivity(intent)
         }
 
-    }
+}

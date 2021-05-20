@@ -13,14 +13,12 @@ open class ViewHolderTodasAsTerefas(itemView: View, private val onClick: ItemCli
      var textViewTitulo : TextView
      var textViewStatus: TextView
      var textViewDescrição: TextView
-     var spinnerClassificacao: Spinner
 
 
     init {
         textViewTitulo = itemView.findViewById(R.id.textView_titulo)
         textViewStatus = itemView.findViewById(R.id.textView_status)
         textViewDescrição = itemView.findViewById(R.id.textView_titulo)
-        spinnerClassificacao = itemView.findViewById(R.id.spinner2)
 
         itemView.setOnClickListener(this)
     }
