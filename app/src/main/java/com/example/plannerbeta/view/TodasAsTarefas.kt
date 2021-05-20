@@ -30,7 +30,6 @@ class TodasAsTarefas : AppCompatActivity() {
         Toast(this, "Tarefa Salva")
 
 //
-
         carregarElemento()
         carregarArray()
         carregarEvento()
@@ -47,14 +46,12 @@ class TodasAsTarefas : AppCompatActivity() {
 
     private fun Toast(todasAsTarefas: TodasAsTarefas, s: String) {
 
-
     }
 
 
     private fun AdapterTodasAsTarefas(context: TodasAsTarefas, arrayDeTarefas: java.util.ArrayList<Tarefas>): AdapterTodasAsTarefas {
         TODO("Not yet implemented")
     }
-
 
 
     fun carregarElemento() {
