@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".view.ActivityDetalhes"
-    tools:visibility="visible">
+    tools:visibility="visible"
+    android:background="@drawable/amarelogradiente">
 
 
     <EditText
@@ -14,9 +15,11 @@
         android:layout_height="51dp"
         android:layout_marginTop="44dp"
         android:ems="10"
+        android:hint="Titulo"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar"
         app:layout_constraintVertical_bias="0.005" />
@@ -27,10 +30,11 @@
         android:layout_height="170dp"
         android:layout_marginTop="12dp"
         android:ems="10"
+        android:hint="Descrição"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner"
         app:layout_constraintVertical_bias="0.0" />
@@ -44,6 +48,16 @@
         android:tooltipText="@string/bloconota"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_statusDetalhes" />
+
+    <EditText
+        android:id="@+id/editText_statusDetalhes"
+        android:layout_width="378dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:hint="Status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_detalhes_titulo"
         app:layout_constraintVertical_bias="0.001" />
@@ -52,12 +66,15 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="68dp"
-        android:background="@color/lightcoral"
+        android:layout_marginTop="24dp"
+        android:alpha="0.80"
+        android:background="@drawable/fotofundo"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:tooltipText=""
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
@@ -74,15 +91,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_detalhes_descrição" />
 
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="71dp"
         android:layout_height="57dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/toolbar"
-        app:layout_constraintHorizontal_bias="0.979"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.016"
+        app:layout_constraintVertical_bias="0.051"
         app:srcCompat="@drawable/ic_baseline_delete_24" />
 </androidx.constraintlayout.widget.ConstraintLayout>

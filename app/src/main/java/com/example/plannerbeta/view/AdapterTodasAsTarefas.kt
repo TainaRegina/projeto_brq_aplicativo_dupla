@@ -36,6 +36,9 @@ open class AdapterTodasAsTarefas(
             holder.textViewDescrição.setText(this.descricao)
             holder.textViewStatus.text = status.toString()
             holder.textViewTitulo.text = titulo.toString()
+            holder.textViewStatus.text = this.status
+            holder.textViewTitulo.text = this.titulo
+
         }
 
     }

@@ -1,8 +1,13 @@
 <resources>
-    <string name="app_name">Plannerbeta</string>
+    <string name="selected_item">Selected item:</string>
+    <string name="app_name">PlannerBeta</string>
     <string name="senha">Insira sua senha</string>
     <string name="email">Insira seu E-mail</string>
-    <string name="bloconota">Insira sua anotação</string>
+    <string name="bloconota">A realizar, Em andamento, Concluido </string>
 
-
+    <string-array name="status">
+        <item>A realizar</item>
+        <item>Em andamento</item>
+        <item>Concluido</item>
+    </string-array>
 </resources>
