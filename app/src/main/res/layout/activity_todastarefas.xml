@@ -9,17 +9,17 @@
 
     <EditText
         android:id="@+id/editText_filtro"
-        android:layout_width="398dp"
-        android:layout_height="51dp"
+        android:layout_width="381dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="136dp"
         android:background="@drawable/amarelogradiente"
         android:drawableEnd="@drawable/ic_baseline_search_24"
-        android:text="Pesquisar..."
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="Pesquisar"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.155"
         tools:context=".view.TodasAsTarefas" />
 
     <ImageView
@@ -53,15 +53,13 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="408dp"
-        android:layout_height="420dp"
-        android:layout_marginBottom="108dp"
+        android:layout_width="356dp"
+        android:layout_height="387dp"
+        android:layout_marginBottom="92dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_filtro"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

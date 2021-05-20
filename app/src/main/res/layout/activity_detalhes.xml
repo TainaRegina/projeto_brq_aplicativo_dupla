@@ -13,16 +13,14 @@
         android:id="@+id/editText_detalhes_titulo"
         android:layout_width="372dp"
         android:layout_height="51dp"
-        android:layout_marginBottom="576dp"
+        android:layout_marginTop="88dp"
         android:ems="10"
         android:hint="Titulo"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.338"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <EditText
         android:id="@+id/editText_detalhes_descrição"
@@ -34,21 +32,7 @@
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.512"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="373dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="12dp"
-        android:contextClickable="true"
-        android:tooltipText="@string/bloconota"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintHorizontal_bias="0.365"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_statusDetalhes"
         app:layout_constraintVertical_bias="0.0" />
@@ -61,11 +45,10 @@
         android:hint="Status"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.575"
+        app:layout_constraintHorizontal_bias="0.355"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText_detalhes_titulo"
-        app:layout_constraintVertical_bias="0.001" />
-
+        app:layout_constraintVertical_bias="0.007" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -94,7 +77,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_detalhes_descrição" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_detalhes_descrição"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView2"

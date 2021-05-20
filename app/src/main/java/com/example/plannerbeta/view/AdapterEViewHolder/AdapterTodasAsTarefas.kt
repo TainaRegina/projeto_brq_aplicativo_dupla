@@ -1,4 +1,4 @@
-package com.example.plannerbeta.view
+package com.example.plannerbeta.view.AdapterEViewHolder
 
 import android.content.Context
 import android.os.Parcelable
@@ -7,6 +7,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.plannerbeta.R
+import com.example.plannerbeta.view.Tarefas
+import com.example.plannerbeta.view.TodasAsTarefas
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 lateinit var btnadd: FloatingActionButton

@@ -14,10 +14,10 @@
         android:layout_height="312dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintVertical_bias="0.022" />
 
     <Button
         android:id="@+id/button_tarefas"
@@ -28,23 +28,23 @@
         android:backgroundTint="@color/white"
         android:text="Minhas Tarefas"
         android:textColor="@color/black"
+        android:alpha="0.80"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/calendarView"
-        app:layout_constraintVertical_bias="0.202" />
+        app:layout_constraintVertical_bias="0.041" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="376dp"
-        android:layout_height="45dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="413dp"
+        android:layout_height="88dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.885"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.042"
-        app:srcCompat="@drawable/titulo" />
+        app:srcCompat="@drawable/titulo"
+        android:alpha="0.90"/>
 
     <TextView
         android:id="@+id/textView"
@@ -53,9 +53,39 @@
         android:text="App by Beatriz e Tainá"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.977" />
+        app:layout_constraintVertical_bias="0.997" />
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/lightcoral"
+        android:gravity="center"
+        android:text="IMPORTANTE"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_tarefas"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="358dp"
+        android:layout_height="109dp"
+        android:layout_marginBottom="56dp"
+        android:alpha="0.50"
+        android:background="@color/lightcoral"
+        android:hint="Digite aqui"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

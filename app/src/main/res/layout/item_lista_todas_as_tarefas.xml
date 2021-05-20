@@ -27,8 +27,8 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="416dp"
-            android:layout_height="match_parent"
+            android:layout_width="384dp"
+            android:layout_height="206dp"
             android:layout_gravity="center"
             android:alpha="0.78"
             android:background="@drawable/fotofundocard">

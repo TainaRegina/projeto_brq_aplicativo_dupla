@@ -3,14 +3,12 @@ package com.example.plannerbeta.view
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.view.View
-import android.widget.Button
 import android.widget.EditText
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.plannerbeta.R
+import com.example.plannerbeta.view.AdapterEViewHolder.AdapterTodasAsTarefas
 
 class TodasAsTarefas : AppCompatActivity() {
     var recyclerView: RecyclerView? = null
@@ -25,12 +23,6 @@ class TodasAsTarefas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_todastarefas)
 
-
-// função salvar, para enviar dados de uma tela para outra
-        Detalhes = intent.getParcelableExtra("detalhetarefa")
-        Toast(this, "Tarefa Salva")
-
-//
 
         carregarElemento()
         carregarArray()

@@ -1,10 +1,10 @@
-package com.example.plannerbeta.view
+package com.example.plannerbeta.view.AdapterEViewHolder
 
 import android.view.View
-import android.widget.Spinner
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.plannerbeta.R
+import com.example.plannerbeta.view.TodasAsTarefas
 
 
 class ViewHolderTodasTarefas(itemView: View) : RecyclerView.ViewHolder(itemView) {
