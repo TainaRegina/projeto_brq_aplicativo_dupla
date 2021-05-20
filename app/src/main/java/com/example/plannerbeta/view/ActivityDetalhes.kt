@@ -15,30 +15,21 @@ import com.example.plannerbeta.R.array.status
 lateinit var btnsalvar: Button
 
 
-
-class ActivityDetalhes(var tarefa: Tarefas? = null, var editTextTituloDetalhes: EditText? = null)
+class ActivityDetalhes(var tarefa: Tarefas? = null, var editTextTituloDetalhes: EditText? = null, var editTextDescricaoDetalhes: EditText? = null)
     : AppCompatActivity(), Parcelable {
 
 
     constructor(parcel: Parcel) : this(
-           // parcel.readString(),
+            // parcel.readString(),
             //parcel.readValue(Int::class.java.classLoader) as Int
     ) {
 
     }
 
-    var tarefa: Tarefas? = null
-    var editTextTituloDetalhes: EditText? = null
-    var editTextDescricaoDetalhes: EditText? = null
-    var editTextStatusDetalhes: EditText? = null
-
-
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detalhes)
-
 
         fun saveDetalhes(detalhes: ActivityDetalhes) {
 
@@ -47,7 +38,7 @@ class ActivityDetalhes(var tarefa: Tarefas? = null, var editTextTituloDetalhes: 
         }
 
 
-       // tarefa = intent.getSerializableExtra("parametro_Objeto") as Tarefas
+        // tarefa = intent.getSerializableExtra("parametro_Objeto") as Tarefas
         editTextTituloDetalhes = findViewById(R.id.editText_detalhes_titulo)
         editTextDescricaoDetalhes = findViewById(R.id.editText_detalhes_descrição)
         editTextDescricaoDetalhes?.setText(tarefa?.descricao)
@@ -72,15 +63,15 @@ class ActivityDetalhes(var tarefa: Tarefas? = null, var editTextTituloDetalhes: 
     }
 
 
-        fun onClick(p0: View) {
-            when (p0?.id) {
-                btnsalvar.id -> {
-                    Toast(this, "Tarefa Salva")
-                }
+    fun onClick(p0: View) {
+        when (p0?.id) {
+            btnsalvar.id -> {
+                Toast(this, "Tarefa Salva")
             }
+        }
 
-            fun Button.setOnClickListener(activityDetalhes: ActivityDetalhes) {
-                TODO("Not yet implemented")
+        fun Button.setOnClickListener(activityDetalhes: ActivityDetalhes) {
+            TODO("Not yet implemented")
 
         }
     }
@@ -95,29 +86,7 @@ class ActivityDetalhes(var tarefa: Tarefas? = null, var editTextTituloDetalhes: 
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
 
-        carregarElemento()
-        atribuirValoremET()
-
-
     }
-
-    fun carregarElemento() {
-        editTextTituloDetalhes = findViewById(R.id.editText_detalhes_titulo)
-        editTextDescricaoDetalhes = findViewById(R.id.editText_detalhes_descrição)
-        editTextStatusDetalhes = findViewById(R.id.editText_statusDetalhes)
-
-    }
-
-    fun atribuirValoremET() {
-        tarefa = intent.getSerializableExtra("parametro_Objeto") as Tarefas
-        editTextDescricaoDetalhes?.setText(tarefa?.descricao)
-        editTextTituloDetalhes?.setText(tarefa?.titulo)
-        editTextStatusDetalhes?.setText(tarefa?.status)
-
-
-    }
-   // SaveData.Tarefa = Tarefas(editTextDescricaoDetalhes?.text.toString(), editTextTituloDetalhes?.text.toString(), editTextStatusDetalhes?.text.toString())
-
 
     override fun describeContents(): Int {
         return 0
@@ -133,7 +102,6 @@ class ActivityDetalhes(var tarefa: Tarefas? = null, var editTextTituloDetalhes: 
         }
     }
 }
-
 
 
 

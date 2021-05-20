@@ -17,14 +17,14 @@ class ViewHolderTodasTarefas(itemView: View) : RecyclerView.ViewHolder(itemView)
         var textViewTitulo: TextView
         var textViewStatus: TextView
         var textViewDescrição: TextView
-        var spinnerClassificacao: Spinner
+      //  var spinnerClassificacao: Spinner
 
 
         init {
             textViewTitulo = itemView.findViewById(R.id.textView_titulo)
             textViewStatus = itemView.findViewById(R.id.textView_status)
             textViewDescrição = itemView.findViewById(R.id.textView_titulo)
-            spinnerClassificacao = itemView.findViewById(R.id.spinner2)
+           // spinnerClassificacao = itemView.findViewById(R.id.spinner2)
 
             itemView.setOnClickListener(this)
         }

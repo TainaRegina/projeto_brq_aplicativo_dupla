@@ -10,11 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Plannerbeta">
         <activity android:name=".view.ActivityDetalhes"/>
-<<<<<<< HEAD
         <activity android:name=".view.TodasAsTarefas" />
-=======
-        <activity android:name=".view.TodasTarefas" />
->>>>>>> e275dc3f40fd313d9becc6a9551133535f888ccd
         <activity android:name=".view.Telainicial">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
